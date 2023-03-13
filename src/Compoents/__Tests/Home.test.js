@@ -34,4 +34,14 @@ describe("Home Component", () => {
     );
     expect(screen.getByRole("img",{name:/Thrid slide/i})).toBeInTheDocument();
   });
+  it("checks whether Button is present", () => {
+    render(
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    );
+    expect(screen.getByRole('button', {  name: /jobs/i})).toBeInTheDocument();
+  });
 });

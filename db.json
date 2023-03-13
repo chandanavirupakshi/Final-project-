@@ -95,6 +95,14 @@
       "address": "tirupathi",
       "experience": "1233",
       "id": 12
+    },
+    {
+      "name": "saritha",
+      "email": "saritha@gmail.com",
+      "phone": "8888888888",
+      "address": "1234242eqs",
+      "experience": "1234",
+      "id": 13
     }
   ],
   "GetInTouch": [

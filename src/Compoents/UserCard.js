@@ -7,7 +7,23 @@ import img9 from "./Images/tcs2.jpg"
 const UserCard = (props) => {
     return(
     <>
-  
+     <div className="cards">
+            <div class="card flex-row flex-wrap">
+                <div class="card-header border-0">
+                </div>
+                <div class="card-block px-1">
+                        <h4 class="card-title">ID:1000</h4>
+                    <h4 class="card-title">Role: Demo</h4>
+                    
+                </div>
+              
+                <div className="col-md-6 d-flex justify-content-center align-items-center">
+                
+              </div>
+             
+            </div>
+        </div>
+
     {props.details.map((value,index) => (
     <Nav.Link as ={Link} to ={`/applyjob/${value.id}`}>
         <div className="cards">
