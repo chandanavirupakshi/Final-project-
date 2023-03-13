@@ -1,0 +1,33 @@
+.errmsg {
+    color: red;
+}
+
+.container {
+    margin-top: 55px;
+    margin-bottom: 65px;
+    
+}
+
+.card-header{
+    text-align: center;
+}
+
+
+
+#apply-btn {
+    text-align: center;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.bg-1 {
+    
+    background-image: url("/src/Compoents/Images/applyjob.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+      }

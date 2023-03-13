@@ -1,0 +1,33 @@
+.Navlogo {
+    position: absolute;
+    left: 15px;
+    font-weight: bold;
+    font-size: 55px;
+    
+}
+
+.Nav-items {
+    color: white;
+    position: fixed;
+    right: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.Navbar-links {
+    color:rgb(255, 255, 255) !important;
+    margin-top: 20px;
+
+}
+.navbar-brand {
+    color: white !important;
+    font-size: 35px !important; 
+    margin-top: 20px;
+    
+}
+
+.Nav-toggler {
+    height: 70px;
+    background-color: rgb(20, 8, 31);
+    color: white;
+}

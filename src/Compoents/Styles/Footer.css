@@ -1,0 +1,10 @@
+.footer-bottom{
+	width: 120%;
+	padding: 14px 0;
+	text-align: center;
+	color: black;
+	background: grey;
+    margin-left: -13rem;
+    margin-top: -2.1rem;
+    position: fixed;
+}

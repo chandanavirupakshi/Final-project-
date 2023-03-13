@@ -1,0 +1,158 @@
+{
+  "user": [
+    {
+      "name": "suresh Rahul",
+      "email": "sureshrahul@gmail.com",
+      "phone": "9492339868",
+      "address": "absbdjnasnd",
+      "experience": "kasdojaopjip",
+      "id": 1
+    },
+    {
+      "name": "Rahul",
+      "email": "rahul@gmail.com",
+      "phone": "7845301592",
+      "address": "absbdjnasnd",
+      "experience": "kasdojaopjip",
+      "id": 2
+    },
+    {
+      "name": "David",
+      "email": "david1@gmail.com",
+      "phone": "7894216545",
+      "address": "oajspdnapinpi",
+      "experience": "pojpiadjanoj",
+      "id": 3
+    },
+    {
+      "name": "asdank",
+      "email": "knkasndjnjan",
+      "phone": "945557854664",
+      "address": "sadnjanlsjdn",
+      "experience": "nsajndjlnlj",
+      "id": 4
+    },
+    {
+      "name": "sas",
+      "email": "saadas",
+      "phone": "48496155546",
+      "address": "asad",
+      "experience": "sad",
+      "id": 5
+    },
+    {
+      "name": "sandy",
+      "email": "nsjlan@gmail.com",
+      "phone": "9492339868",
+      "address": "asjdlnlsa",
+      "experience": "nsadlandi",
+      "id": 6
+    },
+    {
+      "name": "Mohan",
+      "email": "mohan@gmail.com",
+      "phone": "9876154866",
+      "address": "chennai",
+      "experience": "2years in react js",
+      "id": 7
+    },
+    {
+      "name": "Suresh",
+      "email": "sureah@gmail.com",
+      "phone": "9945768110",
+      "address": "chennai",
+      "experience": "2years",
+      "id": 8
+    },
+    {
+      "name": "myna",
+      "email": "myna@gmail.com",
+      "phone": "9848032919",
+      "address": "13-6-600/44a",
+      "experience": "3 years",
+      "id": 9
+    },
+    {
+      "name": "myna",
+      "email": "myna@gmail.com",
+      "phone": "9848032919",
+      "address": "13-6-600/44a",
+      "experience": "3 years",
+      "id": 10
+    },
+    {
+      "name": "meghana",
+      "email": "meghana@gmail.com",
+      "phone": "9848632917",
+      "address": "tirupathi",
+      "experience": "1233",
+      "id": 11
+    },
+    {
+      "name": "meghana",
+      "email": "meghana@gmail.com",
+      "phone": "98486329",
+      "address": "tirupathi",
+      "experience": "1233",
+      "id": 12
+    }
+  ],
+  "GetInTouch": [
+    {
+      "name": "Suresh Rahul",
+      "email": "sureshrahulkkr@gmail.com",
+      "phone": "9493265791",
+      "message": "jasbdojandpksnapk",
+      "id": 1
+    },
+    {
+      "name": "jansdalk",
+      "email": "ajnsdln@gmail.com",
+      "phone": "9784567845",
+      "message": "sadkma;md",
+      "id": 2
+    },
+    {
+      "name": "Mohan",
+      "email": "Mohan@gmail.com",
+      "phone": "784563215",
+      "message": "snadlnallsndlja",
+      "id": 3
+    },
+    {
+      "name": "suresh",
+      "email": "suresh@gmail.com",
+      "phone": "9492339868",
+      "message": "hbsaans",
+      "id": 4
+    },
+    {
+      "name": "chandana",
+      "email": "chandana@gmail.com",
+      "phone": "8056085685",
+      "message": "",
+      "id": 5
+    },
+    {
+      "name": "rajkumar",
+      "email": "rajkumar@gmail.com",
+      "phone": "9846837483",
+      "message": "hi there",
+      "id": 6
+    },
+    {
+      "name": "latheesh",
+      "email": "latheesh@gmail.com",
+      "phone": "8056085685",
+      "message": "i am here to contact u",
+      "id": 7
+    },
+    {
+      "name": "chandana",
+      "email": "charu@gmail.com",
+      "phone": "8056085685",
+      "message": "hi",
+      "id": 8
+    }
+  ]
+}
