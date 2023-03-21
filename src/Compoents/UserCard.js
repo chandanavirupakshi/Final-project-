@@ -1,66 +1,83 @@
 import React from "react";
-import {Nav} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router";
 import './Styles/Jobs.css'
-import img4 from "./Images/cts.jpg"
-import img9 from "./Images/tcs2.jpg"
-const UserCard = (props) => {
-    return(
+
+const UserCard = () => {
+  const [data, setData] = useState([]);
+  const [flag, setFlag] = useState(true); //flag is set to false when there's no data from response.
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8000/jobLists")
+      .then((response) => {
+        setData(response.data);
+      })
+      .catch((e) => {
+        console.log(e.message);
+        setFlag(false);
+        throw new Error();
+      });
+  }, []);
+ 
+  return (
     <>
-     <div className="cards">
-            <div class="card flex-row flex-wrap">
-                <div class="card-header border-0">
-                </div>
-                <div class="card-block px-1">
-                        <h4 class="card-title">ID:1000</h4>
-                    <h4 class="card-title">Role: Demo</h4>
-                    
-                </div>
-              
-                <div className="col-md-6 d-flex justify-content-center align-items-center">
+       
+      {flag ? (
+        <div className="bg-light m-0">
+          <h1 className="container text-center text-uppercase text-secondary mt-2">
+            <u>Job Openings</u>
+          </h1>
+          <div
+            className="bg-info p-4 my-4 border border-4 rounded"
+            style={{ width: "80%", display: "block", margin: "auto" }}
+          >
+            
+            {data.map((item, i) => (
+              <div
+                className="card border border-5 m-4"
+                key={i}
+                style={{ boxShadow: "12px 5px 10px black", cursor: "pointer" }}
+                onClick={() => {
+                  navigate(`/applyjob/${item.id}`);
+                }}
                 
-              </div>
-             
-            </div>
-        </div>
-
-    {props.details.map((value,index) => (
-    <Nav.Link as ={Link} to ={`/applyjob/${value.id}`}>
-        <div className="cards">
-            <div class="card flex-row flex-wrap" key={index}>
+              >
+                 <div class="card flex-row flex-wrap">
                 <div class="card-header border-0">
           
-                  <img src={value.img} className="card-image"/>
+                  <img src={item.icon} className="card-image"/>
 
                 </div>
+             
+                <div className="card-body">
                 
-                <div class="card-block px-1">
-          
-
-                        <h4 class="card-title">ID:{value.id}</h4>
-                    <h4 class="card-title">Role:{value.role}</h4>
-                    <p class="card-text">
-
-                        <i className="bi bi-buildings"/>{value.company}
-                        <i className="bi bi-briefcase"/> {value.experience}
-                        <i className="bi bi-currency-rupee"/>{value.salary}
-                        <i className="bi bi-geo-alt-fill"/>{value.location}
-                    </p>
+                  
+                  <h4 class="card-title">ID:{item.id}</h4>
+                  <p className="card-text text-secondary">{item.role} </p>
+                  <p className="card-text text-secondary">
+                  <i className="bi bi-buildings"/>{item.company}
+                  <i className="bi bi-briefcase"/> {item.experience}    
+                 <i className="bi bi-currency-rupee"/>{item.salary}
+                    <i className="bi bi-geo-alt-fill"/>{item.location}
+                  
+                  </p>
                 </div>
-              
-                <div className="col-md-6 d-flex justify-content-center align-items-center">
                 
               </div>
-             
-            </div>
+              </div>
+            ))}
+          </div>
         </div>
-    </Nav.Link>
-    ))}
+      ) : (
+        //<data text="No Data Found" />
+      '')}
     </>
-    )
-}
+  );
+};
 
 export default UserCard;
-
 
 

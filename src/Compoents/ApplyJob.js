@@ -63,6 +63,7 @@ const ApplyJob = () => {
             <div className="d-flex justify-content-between">
             <div className="offset-lg-3 col-lg-6">
                 <form className="container" onSubmit={handlesubmit} >
+               
                     <div className="card">
                         <div className="card-header">
                             <h2>APPLY FOR JOBS HERE</h2>

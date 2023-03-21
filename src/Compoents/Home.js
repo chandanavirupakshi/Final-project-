@@ -45,7 +45,7 @@ const Home = () => {
             </div>
 
            
-            <div className="display-2 py-5 text-center">
+            <div className="display-2 py-5  text-center">
                 <button
                     type="button"
                     className=" btn-skew py-3"

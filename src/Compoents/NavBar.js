@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <>
 
-         <Navbar key="sm" bg="secondary" expand="sm" className="" variant="dark">
+         <Navbar key="sm" bg="secondary" expand="sm" className="" variant="light">
       <Container fluid className="mx-5"> 
       <Navbar.Brand as ={Link} to ="/" className="Navlogo">TOP JOBS</Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-'sm'`} />
